@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo el diseño</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenLogo" alt="logo">
+        <div class="contenedorBuscador">
+            <input id="parametro" type="text" placeholder="Ingrese un deporte">
+            <button id="botonBuscar" onclick="Buscar()">Buscar</button>
+        </div>
+        <nav id="navHeader">
+            <a href="#inicio">Inicio</a>
+            <a href="#nuestrosProductos" onclick="DesplegarMenuProductos()">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>            
+        </nav>
+        <div class="menuHambur" id="botonMenu" onclick="DesplegarMenuHam()"></div>
+        <nav id="navHambur" class="navHamburCerrado">
+            <a href="#inicio">Inicio</a>
+            <a href="#nuestrosProductos" onclick="DesplegarMenuProductos()">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a> 
+        </nav>        
+        <nav id="navProductos" class="navProductosCerrado">
+            <a href="#">Egresados</a>
+            <a href="#">Deportiva</a>
+            <a href="#">Corporativa</a>           
+        </nav>
+    </header>
+    <hr>
+    <div class="banner">
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>Diseñamos y confeccionamos ropa deportiva, corporativa y de egresados para que te destaques en cada ocasión.</p>
+        </section>
+    </div> 
+    <hr>  
+    <div id="nuestrosProductos">
+        <h1 id="nuestrosProductos">Nuestros productos</h1> 
+    </div>       
+    <div class="contenedor" id="contenedor">        
+        <section>
+            <h1 id="egresados">Egresados</h1>
+            <article>  
+                <div class="imagenes">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                </div>                 
+                <p>Confeccionamos y estampamos ropa deportiva y de egresados para que te destaques en cada ocasión.</p>                
+            </article>
+        </section>
+        <section>
+            <h1 id="deportiva">Deportiva</h1>
+            <article>   
+                <div class="imagenes">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                </div>             
+                <p>Descubre nuestra colección de ropa deportiva para todas tus actividades físicas.</p>                
+            </article>
+        </section>
+        <section>
+            <h1 id="corporativa">Corporativa</h1>
+            <article> 
+                <div class="imagenes">
+                    <img src="imagen1.jpg" alt="Imagen 1">
+                    <img src="imagen2.jpg" alt="Imagen 2">
+                    <img src="imagen3.jpg" alt="Imagen 3">
+                </div>                  
+                <p>Descubre nuestra colección de ropa corporativa para profesionales que desean destacar en su entorno laboral.</p>
+            </article>
+        </section>       
+    </div>
+    <hr>
+    <footer>
+        <nav id="navFooter">
+            <a href="">Privacidad</a>
+            <a href="">Terminos y condiciones</a>
+            <a id="contacto" href="">Contacto</a>
+        </nav>
+        <p id="pFooter">
+            <i>Copyright 2024 &copy; AMOELDISEÑO SA.</i> Desarrollado por <i>MatNet SoftWares</i> todos los derechos reservados.            
+        </p>           
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

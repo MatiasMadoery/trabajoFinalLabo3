@@ -1,0 +1,213 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+}
+
+.logo {
+    width: 110px;
+}
+
+.contenedorBuscador {     
+    float: right;    
+    height: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+#botonBuscar {
+    background-color: rgb(43, 30, 141);
+    color: white;
+    border-radius: 5px;
+}
+ 
+nav {  
+    float: right;       
+}
+
+a {
+    color: rgb(43, 30, 141);
+    text-decoration: none;
+}
+
+#navHeader a{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-right: 5px;    
+    transition: all 0.25s;
+}
+
+#navHeader a:hover {
+    background-color: rgb(43, 30, 141);
+    color: white;
+}
+
+#navHeader {
+    position: relative;
+    top: 50px;   
+}
+
+.navProductosCerrado {
+    display: none;
+}
+
+#navProductos {
+    width: 120px;                
+    margin-top: 80px;     
+    background-color: white; 
+    padding: 30px 30px; 
+    border-radius: 5px;
+}
+
+#navProductos a {
+    background-color: rgb(43, 30, 141);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    width: 90px; 
+    display: block; 
+    transition: all 0.25s;       
+}
+
+#navProductos a:hover{
+    color:  rgb(43, 30, 141);
+    background-color: white;
+    border: 1px solid black;    
+}
+
+.menuHambur {
+    float: right;
+    width: 30px;    
+    aspect-ratio: 1/1;
+    display: none; 
+    background-image: url(imagenes/iconoHamb.webp); 
+    background-size: contain;
+    margin-top: 40px;     
+}
+
+.navHamburCerrado {
+    display: none;
+}
+
+#navHambur {
+    width: 120px;                
+    margin-top: 80px;     
+    background-color: white; 
+    padding: 30px 30px; 
+    border-radius: 5px;
+}
+
+#navHambur a {
+    background-color: rgb(43, 30, 141);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    width: 90px; 
+    display: block; 
+    transition: all 0.25s;       
+}
+
+#navHambur a:hover{
+    color:  rgb(43, 30, 141);
+    background-color: white;
+    border: 1px solid black;    
+}
+.menuAbierto {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+@media(min-width: 768px) {
+    #navHambur{
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    #navHeader {
+        display: none;
+    }
+    #botonMenu {
+        display: block;
+    }
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#nuestrosProductos {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenedor {     
+    margin-top: 25px;
+}
+
+section h1 {
+    text-align: left;
+}
+
+article {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 100px;
+}
+
+article p {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.imagenes {
+    display: flex;
+    /* justify-content: space-between;     */
+    margin-top: 20px;
+}
+
+.imagenes img {
+    width: 30%;
+}
+
+
+
+footer {
+    position: relative;
+    height: 100px;    
+}
+
+#navFooter a{   
+    position: relative;
+    top: 15px;
+    padding: 0px 5px;
+    margin-right: 5px;    
+    transition: all 0.25s;
+}
+
+#navFooter a:hover {
+    background-color: rgb(43, 30, 141);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 5px;
+}
+
+#pFooter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: smaller;
+}

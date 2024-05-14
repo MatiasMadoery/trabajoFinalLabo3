@@ -1,0 +1,3 @@
+Hacer:
+-Cierre de los menus desplegables cuando el mouse sale fuera del div.
+
