@@ -1,11 +1,22 @@
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
+    text-align: center;    
 }
 
-.logo {
-    width: 110px;
+
+/* header */
+
+header {
+    position: relative;
+    height: 80px;
+}
+
+.logo {    
+    position: absolute;
+    border: 1px solid black;    
+    width: 80px;
+    aspect-ratio: 1/1;
 }
 
 .contenedorBuscador {     
@@ -20,9 +31,11 @@ body {
     color: white;
     border-radius: 5px;
 }
- 
-nav {  
-    float: right;       
+
+#navHeader {
+    position: relative;
+    float: right;
+    top: 55px;   
 }
 
 a {
@@ -43,16 +56,13 @@ a {
     color: white;
 }
 
-#navHeader {
-    position: relative;
-    top: 50px;   
-}
 
 .navProductosCerrado {
     display: none;
 }
 
 #navProductos {
+    float: right;
     width: 120px;                
     margin-top: 80px;     
     background-color: white; 
@@ -92,6 +102,7 @@ a {
 }
 
 #navHambur {
+    float: right;
     width: 120px;                
     margin-top: 80px;     
     background-color: white; 
@@ -125,22 +136,12 @@ a {
     z-index: 999;
 }
 
-@media(min-width: 768px) {
-    #navHambur{
-        display: none;
-    }
-}
 
-@media(max-width: 767px) {
-    #navHeader {
-        display: none;
-    }
-    #botonMenu {
-        display: block;
-    }
-}
+
+/* body */
 
 .banner {
+    border: 1px solid black;
     background-image: url('banner.jpg');
     background-size: cover;
     color: black;
@@ -155,6 +156,9 @@ a {
 
 .contenedor {     
     margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
 
 section h1 {
@@ -174,40 +178,84 @@ article p {
 }
 
 .imagenes {
-    display: flex;
-    /* justify-content: space-between;     */
+    display: flex;    
     margin-top: 20px;
+    margin-left: 35px;
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
 }
 
-.imagenes img {
-    width: 30%;
+.logo2 {    
+    border: 1px solid black;
+    width: 150px;
+    height: 60px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: auto;    
+    margin-right: auto;
 }
 
 
+
+/* footer */
 
 footer {
     position: relative;
     height: 100px;    
 }
 
-#navFooter a{   
-    position: relative;
-    top: 15px;
-    padding: 0px 5px;
-    margin-right: 5px;    
-    transition: all 0.25s;
+.contacto-redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 25px;
 }
 
-#navFooter a:hover {
-    background-color: rgb(43, 30, 141);
-    border-radius: 5px;
-    color: white;
-    padding: 5px 5px;
+#logoFooter {
+    margin-left: auto;    
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;    
+    border: 1px solid black;
+    width: 150px;
+    height: 60px;
+    right: 25px;
 }
 
-#pFooter {
-    position: absolute;
+#pFooter {    
     bottom: 0;
     right: 0;
-    font-size: smaller;
+    font-size: 12px;
+}
+
+#pFooter2 {    
+    bottom: -25px;
+    right: 0;
+    font-size: 11px;
+}
+
+
+
+/* mediaQuery */
+
+@media(min-width: 768px) {
+    #navHambur{
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    #navHeader {
+        display: none;
+    }
+    #botonMenu {
+        display: block;
+    }
+    .contenedor {
+        display: block;
+    }
+    .contacto-redes {
+        display: block;
+    }
 }
