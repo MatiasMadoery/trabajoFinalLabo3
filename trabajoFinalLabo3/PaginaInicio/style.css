@@ -92,7 +92,7 @@ a {
     width: 30px;    
     aspect-ratio: 1/1;
     display: none; 
-    background-image: url(imagenes/iconoHamb.webp); 
+    background-image: url(Imagenes/iconoHamb.webp); 
     background-size: contain;
     margin-top: 40px;     
 }
@@ -206,21 +206,43 @@ footer {
 }
 
 .contacto-redes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin: 25px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 150px;
+    margin-bottom: 25px;
 }
 
-#logoFooter {
-    margin-left: auto;    
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;    
+#contacto {
+    margin-right: 700px;
+}
+
+#contacto, #redes {
+    flex: 1;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;    
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#iconoRedes {
+    width: 35px;
+    margin-right: 10px;
+}
+
+#logoFooter { 
     border: 1px solid black;
+    display: block;
     width: 150px;
     height: 60px;
-    right: 25px;
+    margin: 0 auto;
+        
 }
 
 #pFooter {    
