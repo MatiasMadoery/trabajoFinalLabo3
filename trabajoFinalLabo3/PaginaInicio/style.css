@@ -168,7 +168,7 @@ section h1 {
 article {
     border: 3px solid black;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 10px 10px;
     margin-bottom: 100px;
 }
 
@@ -186,6 +186,19 @@ article p {
     height: 300px;
 }
 
+article a {
+    border: 1px solid black;  
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px;      
+    transition: all 0.25s;
+}
+
+article a:hover {
+    background-color: rgb(43, 30, 141);
+    color: white;
+}
+
 .logo2 {    
     border: 1px solid black;
     width: 150px;
@@ -196,6 +209,21 @@ article p {
     margin-right: auto;
 }
 
+.iconosInfo {    
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; 
+    margin-bottom: 50px;     
+}
+
+.seccionIcono {    
+    border: 1px solid black;
+    width: 200px; 
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 135px;        
+}
 
 
 /* footer */
@@ -278,6 +306,9 @@ li {
         display: block;
     }
     .contacto-redes {
+        display: block;
+    }
+    .iconosInfo {
         display: block;
     }
 }
