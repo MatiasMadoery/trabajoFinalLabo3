@@ -9,7 +9,7 @@ body {
 
 header {
     position: relative;
-    height: 80px;
+    height: 90px;    
 }
 
 .logo {    
@@ -35,7 +35,7 @@ header {
 #navHeader {
     position: relative;
     float: right;
-    top: 55px;   
+    top: 62px;   
 }
 
 a {
@@ -89,10 +89,10 @@ a {
 
 .menuHambur {
     float: right;
-    width: 30px;    
+    width: 35px;    
     aspect-ratio: 1/1;
     display: none; 
-    background-image: url(Imagenes/iconoHamb.webp); 
+    background-image: url(Imagenes/menuHamburguesa.png); 
     background-size: contain;
     margin-top: 40px;     
 }
@@ -190,7 +190,7 @@ article a {
     border: 1px solid black;  
     border-radius: 5px;
     padding: 5px 5px;
-    margin-bottom: 10px;      
+    margin-bottom: 15px;      
     transition: all 0.25s;
 }
 
@@ -203,26 +203,30 @@ article a:hover {
     border: 1px solid black;
     width: 150px;
     height: 60px;
-    margin-top: -50px;
+    margin-top: -60px;
     margin-bottom: 50px;
     margin-left: auto;    
     margin-right: auto;
 }
 
 .iconosInfo {    
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px; 
-    margin-bottom: 50px;     
+    display: flex;
+    justify-content: space-between;    
+    align-items: center; 
+    max-width: 1000px;    
+    margin-left: 250px;     
+    margin-bottom: 30px;   
 }
 
-.seccionIcono {    
-    border: 1px solid black;
-    width: 200px; 
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: 135px;        
+.seccionIcono {        
+    width: 350px; 
+    text-align: center;    
+    margin: 40px;         
+}
+
+.seccionIcono img {
+    width:100px;   
+    aspect-ratio: 1/1;
 }
 
 
@@ -310,5 +314,6 @@ li {
     }
     .iconosInfo {
         display: block;
+        margin-left: 30px;
     }
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion</title>
+    <link rel="stylesheet" href="administracionCss.css">
+</head>
+<body>
+    <header>
+        HEADER
+    </header>
+    <hr>
+    <div class="contenedor" id="contenedor">
+        <section class="formulario" id="formulario">
+            <p>Usuario</p>
+            <input id="usuario" type="text">
+            <p>Clave</p>
+            <input id="clave" type="text">
+            <button id="enviar" type="submit" onclick="loginCorrecto()">Enviar</button>
+        </section>
+    </div>
+    <div class="contenedorTabla">
+        <table class="tablaProductos" id="tablaProductos">
+            <tr>
+                <th>Id Codigo</th>
+                <th>Descripcion</th>
+                <th>Precio en Pesos</th>
+                <th>Precio en Dolares</th>
+                <th>Fecha</th>
+            </tr>
+            <tbody class="contenidoTabla" id="contenidoTabla">
+                <tr>
+                    <td></td>
+                    <td>Producto1</td>
+                    <td>$8000</td>
+                    <td>$8</td>
+                    <td>20/05/2024</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Producto2</td>
+                    <td>$9000</td>
+                    <td>$9</td>
+                    <td>22/05/2024</td>
+                </tr>              
+            </tbody>
+        </table>
+    </div>
+    <div class="contenedorBuscador">
+        <input id="parametro" type="text">
+        <button id="botonBuscar" onclick="Buscar()">Buscar</button>
+    </div>  
+    <div class="contenedorAbm">
+        <section class="agregar">
+            <h2>Agregar nuevo producto:</h2>
+            <input id="agregar" type="text" placeholder="Ingrese nombre:" required> 
+            <input id="agregar" type="text" placeholder="Ingrese precio en pesos:" required >   
+            <input id="agregar" type="text" placeholder="Ingrese precio en dolares:" required >
+            <input id="agregar"type="text" placeholder="Ingrese fecha:"  required>
+            <button id="botonNuevo">Nuevo</button> 
+        </section>
+        <section class="modificar">
+            <h2>Modificar producto existente:</h2>
+            <input id="modificar" type="text" placeholder="Ingrese nombre:"> 
+            <input id="modificar" type="text" placeholder="Ingrese precio en pesos:" >   
+            <input id="modificar" type="text" placeholder="Ingrese precio en dolares:" >
+            <input id="modificar"type="text" placeholder="Ingrese fecha:" >
+            <button id="botonModificar">Modificar</button> 
+        </section>
+        <section class="eliminar">
+            <h2>Eliminar producto existente:</h2>
+            <input id="eliminar" type="text" placeholder="Ingrese codigo:">            
+            <button id="botonEliminar">Eliminar</button> 
+        </section>
+    </div> 
+    <hr>
+    <footer>
+        FOOTER
+    </footer>  
+    <script src="administracionJs.js"></script>  
+</body>
+</html>
