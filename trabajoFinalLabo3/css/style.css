@@ -1,7 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
-    text-align: center;    
+    text-align: center;     
 }
 
 
@@ -9,17 +9,15 @@ body {
 
 header {
     position: relative;
-    height: 90px;    
+    height: 90px;  
 }
 
 .logo {    
-    position: absolute;
-     
-    background-image: url(Imagenes/LOGO\ 80X80\ 2.png); 
-    background-size: contain;  
-    
+    position: absolute;     
+    background-image: url(/trabajoFinalLabo3/img/Logo80X80-2.png); 
+    background-size: contain;      
     width: 80px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1;    
 }
 
 .contenedorBuscador {     
@@ -29,10 +27,11 @@ header {
     margin-right: 10px;
 }
 
-#botonBuscar {
-    background-color: rgb(43, 30, 141);
+button {
+    background-color: rgb(24, 13, 105);
     color: white;
     border-radius: 5px;
+    padding: 5px 25px;    
 }
 
 #navHeader {
@@ -42,7 +41,7 @@ header {
 }
 
 a {
-    color: rgb(43, 30, 141);
+    color: rgb(24, 13, 105);
     text-decoration: none;
 }
 
@@ -55,10 +54,9 @@ a {
 }
 
 #navHeader a:hover {
-    background-color: rgb(43, 30, 141);
+    background-color: rgb(24, 13, 105);
     color: white;
 }
-
 
 .navProductosCerrado {
     display: none;
@@ -74,7 +72,7 @@ a {
 }
 
 #navProductos a {
-    background-color: rgb(43, 30, 141);
+    background-color: rgb(24, 13, 105);
     color: white;
     border-radius: 5px;
     padding: 5px 5px;
@@ -85,7 +83,7 @@ a {
 }
 
 #navProductos a:hover{
-    color:  rgb(43, 30, 141);
+    color:  rgb(24, 13, 105);
     background-color: white;
     border: 1px solid black;    
 }
@@ -95,7 +93,7 @@ a {
     width: 35px;    
     aspect-ratio: 1/1;
     display: none; 
-    background-image: url(Imagenes/menuHamburguesa.png); 
+    background-image: url(/trabajoFinalLabo3/img/menuHamburguesa.png); 
     background-size: contain;
     margin-top: 40px;     
 }
@@ -105,23 +103,25 @@ a {
 }
 
 #navHambur {
+    position: relative;
     float: right;
-    width: 120px;                
+    width: 100px;                
     margin-top: 80px;     
     background-color: white; 
     padding: 30px 30px; 
     border-radius: 5px;
+    transition: all 1s;    
 }
 
 #navHambur a {
-    background-color: rgb(43, 30, 141);
+    background-color: rgb(24, 13, 105);
     color: white;
     border-radius: 5px;
     padding: 5px 5px;
     margin-bottom: 10px;
     width: 90px; 
     display: block; 
-    transition: all 0.25s;       
+    transition: all 1s;        
 }
 
 #navHambur a:hover{
@@ -129,27 +129,30 @@ a {
     background-color: white;
     border: 1px solid black;    
 }
-.menuAbierto {
+
+.menuAbierto {    
     overflow: hidden;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
-    z-index: 999;
+    z-index: 2;   
 }
 
 
 
 /* body */
 
-.banner {
+.banner {    
     border: 1px solid black;
-    background-image: url(Imagenes/Imagen\ de\ WhatsApp\ 2024-05-20\ a\ las\ 23.14.49_3bc8f895.jpg);
+    background-image: url(/trabajoFinalLabo3/img/banner.jpg);
     background-size: cover;
-    color: black;
+    color: white;
     text-align: center;
     padding: 100px 0;
+    height: 100px;
+    margin-bottom: 25px;
 }
 
 #nuestrosProductos {
@@ -198,7 +201,7 @@ article a {
 }
 
 article a:hover {
-    background-color: rgb(43, 30, 141);
+    background-color: rgb(24, 13, 105);
     color: white;
 }
 
@@ -206,7 +209,7 @@ article a:hover {
     border: 1px solid black;
     width: 150px;
     height: 60px;
-    margin-top: -60px;
+    margin-top: -20px;
     margin-bottom: 50px;
     margin-left: auto;    
     margin-right: auto;
@@ -224,7 +227,7 @@ article a:hover {
 .seccionIcono {        
     width: 350px; 
     text-align: center;    
-    margin: 40px;         
+    margin: 80px;         
 }
 
 .seccionIcono img {
@@ -301,17 +304,19 @@ li {
     color: black;
     text-align: center;
     padding: 100px 0;
-    margin: 25px;
+    margin: 25px;    
 } */
 
 /*Pagina Administracion*/
 
 /*login*/
-/* header, footer {
+
+header, footer {
     position: relative;
-    z-index: 1;  Asegura que el header y footer estén por debajo del contenedor 
+    z-index: 1;  /*Asegura que el header y footer estén por debajo del contenedor*/ 
 }
-.contenedor {
+
+.contenedorAdmin {
     border: 1px solid black;        
     position: fixed;
     top: 0;
@@ -322,10 +327,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;  Asegura que el contenedor esté por encima del resto del contenido 
-}       
+    z-index: 2;  /*Asegura que el contenedor esté por encima del resto del contenido*/ 
+}  
 
-.formulario {
+.formularioAdmin {
     background: white; 
     width: 300px;
     height: 240px;       
@@ -333,28 +338,32 @@ li {
     text-align: center;
 }
 
-button {
+ #enviar {
     width: 50%;
     margin-top: 30px;
     padding: 10px;
-    background-color: #0056b3;
+    background-color: rgb(24, 13, 105);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #003d80;
+#enviar:hover {
+    background-color: white;
+    color: rgb(24, 13, 105);
+    border: 1px solid black;
 }
 
-
-body 
+/*body*/ 
 
 table{
+    position: relative;    
     font-size: 14px;   
     border-collapse:separate;    
-    margin: 10px;  
+    margin: auto;
+    margin-bottom: 25px; 
+    margin-top: 25px;     
 }
 
 th{
@@ -371,37 +380,34 @@ th,td{
     padding: 10px;    
 }
 
-.contenedorBuscador {     
-    
-    margin: 25px;    
-}
-
-#botonBuscar {
-    background-color: rgb(43, 30, 141);
-    color: white;
-    border-radius: 5px;
-    width: 100px;
-}
-
-.contenedorAbm {
+.contenedorAbm{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;    
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
-section {
+.contenedorAbm section{
     border: 1px solid black;
+    border-radius: 5px;
     padding: 5px 5px;
+    margin-top: 25px;
 }
-
-section h2{
+.contenedorAbm section h2{
     font-size: 15px;
     text-align: left;
 }
 
-input {
+input {    
     margin: 5px;
-} */
+}
+ ::placeholder{
+    font-size: smaller;
+ }
+
+.botonAbm{
+    margin: 15px;
+}
 
 
 

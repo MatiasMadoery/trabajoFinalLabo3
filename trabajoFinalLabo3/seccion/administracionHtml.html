@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administracion</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/trabajoFinalLabo3/css/style.css">
 </head>
 <body>
-    <header>
-        HEADER
-    </header>
+   <script src="/trabajoFinalLabo3/js/header.js"></script>
     <hr>
-    <div class="contenedor" id="contenedor">
-        <section class="formulario" id="formulario">
+    <div class="contenedorAdmin" id="contenedorAdmin">
+        <section class="formularioAdmin" id="formularioAdmin">
             <p>Usuario</p>
             <input id="usuario" type="text">
             <p>Clave</p>
             <input id="clave" type="text">
             <button id="enviar" type="submit" onclick="loginCorrecto()">Enviar</button>
         </section>
+    </div>
+    <div>
+        <h2>STOCK PRODUCTOS</h2>
     </div>
     <div class="contenedorTabla">
         <table class="tablaProductos" id="tablaProductos">
@@ -29,55 +30,39 @@
                 <th>Precio en Dolares</th>
                 <th>Fecha</th>
             </tr>
-            <tbody class="contenidoTabla" id="contenidoTabla">
-                <tr>
-                    <td></td>
-                    <td>Producto1</td>
-                    <td>$8000</td>
-                    <td>$8</td>
-                    <td>20/05/2024</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Producto2</td>
-                    <td>$9000</td>
-                    <td>$9</td>
-                    <td>22/05/2024</td>
-                </tr>              
+            <tbody class="contenidoTabla" id="contenidoTabla">                   
             </tbody>
         </table>
     </div>
-    <div class="contenedorBuscador">
+    <div class="contenedorBuscadorAdmin">
         <input id="parametro" type="text">
-        <button id="botonBuscar" onclick="Buscar()">Buscar</button>
+        <button id="botonBuscarAdmin" onclick="Buscar()">Buscar</button>
     </div>  
     <div class="contenedorAbm">
         <section class="agregar">
             <h2>Agregar nuevo producto:</h2>
-            <input id="agregar" type="text" placeholder="Ingrese nombre:" required> 
-            <input id="agregar" type="text" placeholder="Ingrese precio en pesos:" required >   
-            <input id="agregar" type="text" placeholder="Ingrese precio en dolares:" required >
-            <input id="agregar"type="text" placeholder="Ingrese fecha:"  required>
-            <button id="botonNuevo">Nuevo</button> 
+            <input id="agregarTitulo" type="text" placeholder="Ingrese nombre:" required> 
+            <input id="agregarPrecioPesos" type="text" placeholder="Ingrese precio en pesos:" required >   
+            <input id="agregarPrecioDolar" type="text" placeholder="Ingrese precio en dolares:" required >
+            <input id="agregarFecha"type="text" placeholder="Ingrese fecha: aaaa-mm-dd"  required>
+            <button class="botonAbm" id="botonNuevo" onclick="CrearProducto()">Nuevo</button> 
         </section>
         <section class="modificar">
             <h2>Modificar producto existente:</h2>
             <input id="modificar" type="text" placeholder="Ingrese nombre:"> 
             <input id="modificar" type="text" placeholder="Ingrese precio en pesos:" >   
             <input id="modificar" type="text" placeholder="Ingrese precio en dolares:" >
-            <input id="modificar"type="text" placeholder="Ingrese fecha:" >
-            <button id="botonModificar">Modificar</button> 
+            <input id="modificar"type="text" placeholder="Ingrese fecha: aaaa-mm-dd" >
+            <button class="botonAbm" id="botonModificar">Modificar</button> 
         </section>
         <section class="eliminar">
-            <h2>Eliminar producto existente:</h2>
+            <h2>Eliminar producto:</h2>
             <input id="eliminar" type="text" placeholder="Ingrese codigo:">            
-            <button id="botonEliminar">Eliminar</button> 
+            <button class="botonAbm" id="botonEliminar">Eliminar</button> 
         </section>
     </div> 
     <hr>
-    <footer>
-        FOOTER
-    </footer>  
-    <script src="js/administracion.js"></script>  
+    <script src="/trabajoFinalLabo3/js/footer.js"></script> 
+    <script src="/trabajoFinalLabo3/js/administracionJs.js"></script>  
 </body>
 </html>
