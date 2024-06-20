@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administracion</title>
     <link rel="stylesheet" href="/trabajoFinalLabo3/css/style.css">
+    <script src="/trabajoFinalLabo3/js/main.js"></script>
 </head>
 <body>
-   <script src="/trabajoFinalLabo3/js/header.js"></script>
+   <script src="/trabajoFinalLabo3/js/header.js"></script>  
     <hr>
     <div class="contenedorAdmin" id="contenedorAdmin">
         <section class="formularioAdmin" id="formularioAdmin">
@@ -35,7 +36,7 @@
         </table>
     </div>
     <div class="contenedorBuscadorAdmin">
-        <input id="parametro" type="text">
+        <input id="parametroAbm" type="text">
         <button id="botonBuscarAdmin" onclick="Buscar()">Buscar</button>
     </div>  
     <div class="contenedorAbm">
@@ -44,25 +45,30 @@
             <input id="agregarTitulo" type="text" placeholder="Ingrese nombre:" required> 
             <input id="agregarPrecioPesos" type="text" placeholder="Ingrese precio en pesos:" required >   
             <input id="agregarPrecioDolar" type="text" placeholder="Ingrese precio en dolares:" required >
-            <input id="agregarFecha"type="text" placeholder="Ingrese fecha: aaaa-mm-dd"  required>
+            <input id="agregarFecha"type="date" required>
             <button class="botonAbm" id="botonNuevo" onclick="CrearProducto()">Nuevo</button> 
         </section>
         <section class="modificar">
             <h2>Modificar producto existente:</h2>
-            <input id="modificar" type="text" placeholder="Ingrese nombre:"> 
-            <input id="modificar" type="text" placeholder="Ingrese precio en pesos:" >   
-            <input id="modificar" type="text" placeholder="Ingrese precio en dolares:" >
-            <input id="modificar"type="text" placeholder="Ingrese fecha: aaaa-mm-dd" >
-            <button class="botonAbm" id="botonModificar">Modificar</button> 
+            <input id="modificarId" type="text" placeholder="Id Codigo" readonly> 
+            <input id="modificarTitulo" type="text" placeholder="Nombre:"> 
+            <input id="modificarPrecioPeso" type="number" placeholder="Precio en pesos:" >   
+            <input id="modificarPrecioDolar" type="number" placeholder="Precio en dolares:" >
+            <input id="modificarFecha"type="date">
+            <button class="botonAbm" id="botonModificar" onclick="ModificarProducto()">Modificar</button> 
         </section>
-        <section class="eliminar">
+        <!-- <section class="eliminar">
             <h2>Eliminar producto:</h2>
-            <input id="eliminar" type="text" placeholder="Ingrese codigo:">            
-            <button class="botonAbm" id="botonEliminar">Eliminar</button> 
-        </section>
+            <input id="eliminarId" type="text" placeholder="Id Codigo" readonly> 
+            <input id="eliminarTitulo" type="text" placeholder="Nombre:" readonly> 
+            <input id="eliminarPrecioPeso" type="number" placeholder="Precio en pesos:" readonly>   
+            <input id="eliminarPrecioDolar" type="number" placeholder="Precio en dolares:" readonly>
+            <input id="eliminarFecha"type="date" readonly>                       
+            <button class="botonAbm" id="botonEliminar" onclick="EliminarProducto()">Eliminar</button> 
+        </section> -->
     </div> 
-    <hr>
-    <script src="/trabajoFinalLabo3/js/footer.js"></script> 
-    <script src="/trabajoFinalLabo3/js/administracionJs.js"></script>  
+    <hr>     
+    <script src="/trabajoFinalLabo3/js/administracionJs.js"></script>    
+    <script src="/trabajoFinalLabo3/js/footer.js"></script>      
 </body>
 </html>
