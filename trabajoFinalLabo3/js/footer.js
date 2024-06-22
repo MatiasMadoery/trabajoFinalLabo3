@@ -10,15 +10,15 @@ document.write(`
             <div id="redes">
                 <h4>Redes Sociales</h4>
                 <ul>
-                    <li><img src="img/facebook.png" alt="Facebook" id="iconoRedes">Facebook</li>                    
-                    <li><img src="img/instagram.png" alt="Instagram" id="iconoRedes">Instagram</li>
+                    <li><img src="/trabajoFinalLabo3/img/facebook.png" alt="Facebook" id="iconoRedes">Facebook</li>                    
+                    <li><img src="/trabajoFinalLabo3/img/instagram.png" alt="Instagram" id="iconoRedes">Instagram</li>
                 </ul>
             </div>
         </div>
         <div id="logoFooter">
             <img src="img/logo.png" alt="Logo">
         </div>
-        <p id="pFooter">© 2023 Amo el diseño. Todos los derechos reservados.</p>
+        <p id="pFooter">© 2024 Amo el diseño. Todos los derechos reservados.</p>
         <p id="pFooter2">Diseñado por Matias Madoery.</p>
     </footer>
     `)

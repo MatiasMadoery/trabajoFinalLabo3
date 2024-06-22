@@ -8,13 +8,28 @@ function DesplegarMenuHam()
         if(desplegarMenu.className == 'navHamburCerrado')
         {
             desplegarMenu.className = 'navHambur';
-            body.classList.add('menuAbierto');
+            body.classList.add('menuAbierto');            
         }
         else
         {
             desplegarMenu.className = 'navHamburCerrado';
             body.classList.remove('menuAbierto');
         }
+    } 
+}
+
+function CerrarMenuHam() 
+{
+    var desplegarMenu = document.getElementById('navHambur')
+    var body = document.body;
+
+    if(desplegarMenu)
+    {
+        if(desplegarMenu.className == 'navHambur')
+        {
+            desplegarMenu.className = 'navHamburCerrado';
+            body.classList.remove('menuAbierto');           
+        }       
     } 
 }
 
@@ -29,12 +44,24 @@ function DesplegarMenuProductos()
         {
             desplegarMenu.className = 'navProductos';
             body.classList.add('menuAbierto');
-        }
-        else
+        } else{
+            desplegarMenu.className = 'navProductosCerrado';
+            body.classList.remove('menuAbierto');
+        }  
+    } 
+}
+
+function CerrarMenuProductos(){
+    var desplegarMenu = document.getElementById('navProductos')
+    var body = document.body;
+
+    if(desplegarMenu)
+    {
+        if(desplegarMenu.className == 'navProductos')
         {
             desplegarMenu.className = 'navProductosCerrado';
             body.classList.remove('menuAbierto');
-        }
+        }      
     } 
 }
 

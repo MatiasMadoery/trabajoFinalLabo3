@@ -1,6 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
+    margin: 0;
     text-align: center;     
 }
 
@@ -10,6 +10,7 @@ body {
 header {
     position: relative;
     height: 90px;  
+    margin: 15px;
 }
 
 .logo {    
@@ -63,22 +64,23 @@ a {
 }
 
 #navProductos {
-    float: right;
+    float: right;    
     width: 100px;                
-    margin-top: 100px;     
+    margin-top: 100px; 
+    margin-right: -140px;    
     background-color: white; 
-    padding: 20px 20px; 
-    border-radius: 5px;    
+    padding: 15px 30px; 
+    border-radius: 5px;      
 }
 
 #navProductos a {
     background-color: rgb(24, 13, 105);
     color: white;
     border-radius: 5px;
-    padding: 7px 7px;
+    padding: 7px 7px;    
     margin-bottom: 10px;
     width: 100px; 
-    display: block; 
+    display:block ; 
     transition: all 0.25s;       
 }
 
@@ -148,8 +150,7 @@ a {
     border: 1px solid black;
     background-image: url(/trabajoFinalLabo3/img/banner.jpg);
     background-size: cover;
-    color: white;
-    text-align: center;
+    background-position: center;       
     padding: 100px 0;
     height: 100px;
     margin-bottom: 25px;
@@ -176,6 +177,13 @@ article {
     border-radius: 5px;
     padding: 10px 10px;
     margin-bottom: 100px;
+}
+
+.nosotros article {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 50px;
 }
 
 article p {
@@ -253,13 +261,13 @@ footer {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto 25px auto;
-    padding: 0 20px;
+    padding: 0 10px;
     color: white;
 }
 
 #contacto, #redes {
     flex: 1;
-    margin: 0 10px;
+    margin: -20px 10px;
 }
 
 #contacto h4, #redes h4 {
@@ -421,32 +429,6 @@ input {
 
 
 /* mediaQuery */
-
-/*madiaQuery Menu Hamburguesa*/
-/* @media(min-width: 768px) {
-    #navHambur{
-        display: none;
-    }
-}
-
-@media(max-width: 767px) {
-    #navHeader {
-        display: none;
-    }
-    #botonMenu {
-        display: block;
-    }
-    .contenedor {
-        display: block;
-    }
-    .contacto-redes {
-        display: block;
-    }
-    .iconosInfo {
-        display: block;
-        margin-left: 30px;
-    }
-} */
 
 /* mediaQuery para celulares */
 @media (max-width: 767px) { 
