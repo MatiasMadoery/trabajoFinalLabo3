@@ -41,15 +41,12 @@ function Buscar() {
     });
 }
 
+
 //URL APi
 var urlBase = 'https://api.yumserver.com/16976/products';
 
-//Mostrar articulos
-// function CargarLista(event){
-//     event.preventDefault();
-//     MostrarProductos();
-// }
 
+//Funciones para manejo de tabla
 MostrarProductos()
 
 function MostrarProductos(){
@@ -197,6 +194,11 @@ function EliminarProducto(id){
         if (data.trim() === 'OK') {
             alert('El producto se eliminó correctamente!');
             MostrarProductos();
+            document.getElementById('modificarId').value = "";
+            document.getElementById('modificarTitulo').value = "";
+            document.getElementById('modificarPrecioPesos').value = "";
+            document.getElementById('modificarPrecioDolar').value = "";
+            document.getElementById('modificarFecha').value = "";
         } else {
             alert('No se pudo eliminar el producto!');
         }

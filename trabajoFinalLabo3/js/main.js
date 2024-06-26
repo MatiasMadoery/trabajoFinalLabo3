@@ -1,6 +1,6 @@
 function DesplegarMenuHam() 
 {
-    var desplegarMenu = document.getElementById('navHambur')
+    var desplegarMenu = document.getElementById('navHambur');
     var body = document.body;
 
     if(desplegarMenu)
@@ -20,10 +20,11 @@ function DesplegarMenuHam()
 
 function CerrarMenuHam() 
 {
-    var desplegarMenu = document.getElementById('navHambur')
+    var desplegarMenu = document.getElementById('navHambur');
+    var menuProductos = document.getElementById('navProductos');
     var body = document.body;
 
-    if(desplegarMenu)
+    if(desplegarMenu && menuProductos.classList == 'navProductosCerrado')
     {
         if(desplegarMenu.className == 'navHambur')
         {
@@ -35,7 +36,7 @@ function CerrarMenuHam()
 
 function DesplegarMenuProductos() 
 {
-    var desplegarMenu = document.getElementById('navProductos')
+    var desplegarMenu = document.getElementById('navProductos');    
     var body = document.body;
 
     if(desplegarMenu)
@@ -52,7 +53,7 @@ function DesplegarMenuProductos()
 }
 
 function CerrarMenuProductos(){
-    var desplegarMenu = document.getElementById('navProductos')
+    var desplegarMenu = document.getElementById('navProductos');
     var body = document.body;
 
     if(desplegarMenu)

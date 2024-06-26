@@ -16,7 +16,7 @@ document.write(`
             </div>
         </div>
         <div id="logoFooter">
-            <img src="img/logo.png" alt="Logo">
+            <img class="logoFooter" src="/trabajoFinalLabo3/img/logoABlanco.png" alt="Logo">
         </div>
         <p id="pFooter">© 2024 Amo el diseño. Todos los derechos reservados.</p>
         <p id="pFooter2">Diseñado por Matias Madoery.</p>

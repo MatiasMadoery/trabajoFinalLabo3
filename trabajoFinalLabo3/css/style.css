@@ -1,22 +1,20 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     text-align: center;     
 }
 
 
-/* header */
-
+/*-----header-----*/
 header {
     position: relative;
     height: 90px;  
-    margin: 15px;
+    margin: 10px;    
 }
 
-.logo {    
-    position: absolute;     
-    background-image: url(/trabajoFinalLabo3/img/Logo80X80-2.png); 
-    background-size: contain;      
+.logo { 
+    margin-top: 15px;   
+    position: absolute;         
     width: 80px;
     aspect-ratio: 1/1;    
 }
@@ -63,11 +61,11 @@ a {
     display: none;
 }
 
-#navProductos {
-    float: right;    
+#navProductos {     
+    float:right;    
     width: 100px;                
     margin-top: 100px; 
-    margin-right: -140px;    
+    margin-right: 0px;    
     background-color: white; 
     padding: 15px 30px; 
     border-radius: 5px;      
@@ -104,8 +102,7 @@ a {
     display: none;
 }
 
-#navHambur {
-    position: relative;
+#navHambur {    
     float: right;
     width: 100px;                
     margin-top: 80px;     
@@ -123,7 +120,7 @@ a {
     margin-bottom: 10px;
     width: 90px; 
     display: block; 
-    transition: all 1s;        
+    transition: all 0.25s;        
 }
 
 #navHambur a:hover{
@@ -143,111 +140,10 @@ a {
 }
 
 
-
-/* body */
-
-.banner {    
-    border: 1px solid black;
-    background-image: url(/trabajoFinalLabo3/img/banner.jpg);
-    background-size: cover;
-    background-position: center;       
-    padding: 100px 0;
-    height: 100px;
-    margin-bottom: 25px;
-}
-
-#nuestrosProductos {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.contenedor {     
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-section h1 {
-    text-align: left;
-}
-
-article {
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin-bottom: 100px;
-}
-
-.nosotros article {
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin: 50px;
-}
-
-article p {
-    text-align: center;
-    padding: 0px 10px;
-}
-
-.imagenes {
-    display: flex;    
-    margin-top: 20px;
-    margin-left: 35px;
-    border: 1px solid black;
-    width: 400px;
-    height: 300px;
-}
-
-article a {
-    border: 1px solid black;  
-    border-radius: 5px;
-    padding: 5px 5px;
-    margin-bottom: 15px;      
-    transition: all 0.25s;
-}
-
-article a:hover {
-    background-color: rgb(24, 13, 105);
-    color: white;
-}
-
-.logo2 {    
-    border: 1px solid black;
-    width: 150px;
-    height: 60px;
-    margin-top: -20px;
-    margin-bottom: 50px;
-    margin-left: auto;    
-    margin-right: auto;
-}
-
-.iconosInfo {    
-    display: flex;
-    justify-content: space-between;    
-    align-items: center; 
-    max-width: 1000px;    
-    margin-left: 250px;     
-    margin-bottom: 30px;   
-}
-
-.seccionIcono {        
-    width: 350px; 
-    text-align: center;    
-    margin: 80px;         
-}
-
-.seccionIcono img {
-    width:100px;   
-    aspect-ratio: 1/1;
-}
-
-
-/* footer */
-
+/*-----footer-----*/
 footer {
-    background-color: black;
+    background-image: url(/trabajoFinalLabo3/img/fondoTrama.png);
+    background-size: cover;    
     padding: 20px 0;
     text-align: center; 
     margin: 0px;
@@ -278,7 +174,7 @@ footer {
 #redes ul {
     list-style-type: none;
     padding: 0;  
-    margin-left: 160px;       
+    margin-left: 190px;       
 }
 
 #redes li {
@@ -290,14 +186,17 @@ footer {
 #iconoRedes {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 #logoFooter {
     display: block;
     margin: 0 auto 10px auto;
-    width: 100px;
-    height: auto;
+    margin-top: 30px;      
+}
+
+.logoFooter {
+    width: 50px;
 }
 
 #pFooter, #pFooter2 {
@@ -307,18 +206,128 @@ footer {
 }
 
 
-/*Pagina Nosotros*/
-/* .banner1, .banner2 {
-    border: 1px solid black;
-    background-image: url('banner.jpg');
-    background-size: cover;
-    color: black;
-    text-align: center;
-    padding: 100px 0;
-    margin: 25px;    
-} */
+/*-----Pagina  principal-----*/
 
-/*Pagina Administracion*/
+/*body*/
+.banner {    
+    border: 1px solid black;
+    background-image: url(/trabajoFinalLabo3/img/banner.jpg);
+    background-size: cover;
+    background-position: center;       
+    padding: 100px 0;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+#nuestrosProductos {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contenedor {     
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+section h1 {
+    text-align: left;
+}
+
+article {
+    display:block;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 100px;
+}
+
+.nosotros article {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 50px;
+}
+
+article p {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.imagenes {   
+    margin: auto;  
+    max-width: 400px;
+    max-height: 300px;
+}
+
+article a {
+    border: 1px solid black;  
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-bottom: 15px;      
+    transition: all 0.25s;
+}
+
+article a:hover {
+    background-color: rgb(24, 13, 105);
+    color: white;
+}
+
+.logo2 {       
+    width: 300px;
+    height: 60px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: auto;    
+    margin-right: auto;
+    padding: auto;
+    border-radius: 100px;
+    padding: 20px;
+    background-image: url(/trabajoFinalLabo3/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#logo2 {
+    width: 110px;
+    float: left;   
+}
+
+.iconosInfo {    
+    display: flex;
+    justify-content: space-between;    
+    align-items: center; 
+    max-width: 1000px;    
+    margin-left: 250px;     
+    margin-bottom: 30px;   
+}
+
+.seccionIcono {        
+    width: 350px; 
+    text-align: center;    
+    margin: 80px;         
+}
+
+.seccionIcono img {
+    width:100px;   
+    aspect-ratio: 1/1;
+}
+
+
+/*-----Pagina Nosotros-----*/
+
+/*body*/
+
+.nosotros h2 {
+    color: white;
+    background-color: rgb(24, 13, 105);
+    border-radius: 5px;
+}
+
+
+
+/*-----Pagina Administracion-----*/
 
 /*login*/
 
@@ -368,7 +377,7 @@ header, footer {
 
 /*body*/ 
 
-table {
+table {      
     position: relative;    
     font-size: 14px;   
     border-collapse:separate;    
@@ -400,22 +409,25 @@ th,td {
 .contenedorAbm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 50px;    
+    margin: auto;
     margin-bottom: 50px;
+    max-width: 600px;
 }
 
 .contenedorAbm section {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
-    padding: 5px 5px;
-    margin-top: 25px;
+    padding: 5px 25px;
+    margin-top: 25px;   
+    display: grid; 
 }
 .contenedorAbm section h2{
     font-size: 15px;
     text-align: left;
 }
 
-input {    
+input {        
     margin: 5px;
 }
  ::placeholder{
@@ -428,20 +440,25 @@ input {
 
 
 
-/* mediaQuery */
+/*-----MediaQuery-----*/
 
 /* mediaQuery para celulares */
-@media (max-width: 767px) { 
-    .logo {
-        width: 50px;
-        margin-top: 35px;
+@media (max-width: 767px) {     
+    
+    .logo {        
+        margin-top: 50px;
     }   
+
+    #logo {
+        width: 100px;
+    }
 
     #navHeader {
         display: none;
     }
 
     .menuHambur {
+        margin-top: 60px;
         display: block;
     }
     
@@ -471,6 +488,15 @@ input {
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+
+    .logoFooter {
+        width: 40px;
+    }
+
+    .contenedorAbm {
+       display: block;
+        max-width: 300px;       
     }
 }
 
