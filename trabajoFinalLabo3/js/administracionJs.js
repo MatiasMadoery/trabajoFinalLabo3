@@ -118,17 +118,16 @@ function SeleccionarFila(fila){
     let idMod = document.getElementById('modificarId').value 
 
 
-    fetch(urlBase).then(response => response.json())
+    fetch(urlBase)
+    .then(response => response.json())
     .then(producto =>{
-        for(let i=0; i<producto.length;i++){
+        for(let i = 0; i < producto.length; i++){
             if(producto[i].idcod == idMod){
-                document.getElementById('modificarTitulo').value = producto[i].idcod;
+                document.getElementById('modificarId').value = producto[i].idcod;
                 document.getElementById('modificarTitulo').value = producto[i].titulo;
                 document.getElementById('modificarPrecioPeso').value = producto[i].precioPeso;
                 document.getElementById('modificarPrecioDolar').value = producto[i].precioDolar;
                 document.getElementById('modificarFecha').value = producto[i].fecha;
-            }else{
-                console.log("Hola")
             }
         }
     })
@@ -163,7 +162,7 @@ function ModificarProducto(){
             MostrarProductos();
             document.getElementById('modificarId').value = "";
             document.getElementById('modificarTitulo').value = "";
-            document.getElementById('modificarPrecioPesos').value = "";
+            document.getElementById('modificarPrecioPeso').value = "";
             document.getElementById('modificarPrecioDolar').value = "";
             document.getElementById('modificarFecha').value = "";
         } else {
@@ -185,7 +184,7 @@ function EliminarProducto(id){
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body : JSON.stringify({
-            idcod : id
+        idcod : id
         })
     })
     .then(response => response.text())
@@ -196,7 +195,7 @@ function EliminarProducto(id){
             MostrarProductos();
             document.getElementById('modificarId').value = "";
             document.getElementById('modificarTitulo').value = "";
-            document.getElementById('modificarPrecioPesos').value = "";
+            document.getElementById('modificarPrecioPeso').value = "";
             document.getElementById('modificarPrecioDolar').value = "";
             document.getElementById('modificarFecha').value = "";
         } else {

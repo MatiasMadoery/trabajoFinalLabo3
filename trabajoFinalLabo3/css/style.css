@@ -12,8 +12,7 @@ header {
     margin: 10px;    
 }
 
-.logo { 
-    margin-top: 15px;   
+.logo {     
     position: absolute;         
     width: 80px;
     aspect-ratio: 1/1;    
@@ -173,13 +172,12 @@ footer {
 
 #redes ul {
     list-style-type: none;
-    padding: 0;  
-    margin-left: 190px;       
+    padding: 0;          
 }
 
 #redes li {
     margin-bottom: 15px;
-    display: flex;
+    display: block;
     align-items: center;    
 }
 
@@ -445,12 +443,12 @@ input {
 /* mediaQuery para celulares */
 @media (max-width: 767px) {     
     
-    .logo {        
-        margin-top: 50px;
+    .logo {             
+        margin-top: 35px;
     }   
 
-    #logo {
-        width: 100px;
+    #logo {        
+        max-width: 120px;
     }
 
     #navHeader {
@@ -494,9 +492,14 @@ input {
         width: 40px;
     }
 
+.formularioAdmin {
+    margin-left: -25px;
+    margin-top: -200px;  
+}
+
     .contenedorAbm {
        display: block;
-        max-width: 300px;       
+       max-width: 300px;       
     }
 }
 
